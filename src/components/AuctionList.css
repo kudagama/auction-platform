@@ -1,0 +1,66 @@
+.auction-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 40px;
+    justify-items: center;
+  }
+  
+  .auction-card {
+    background-color: hwb(0 85% 10% / 0.9);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 350px;
+    text-align: left;
+    position: relative;
+  }
+  
+  .auction-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .auction-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .auction-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #301313;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .auction-card p {
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .starting-bid {
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 15px;
+  }
+  
+  .auction-card button {
+    display: inline-block;
+    background-color: #490b0b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .auction-card button:hover {
+    background-color: #6e1111;
+  }
+  

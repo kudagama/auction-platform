@@ -1,0 +1,164 @@
+/* Auction History Container */
+.auction-history-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: hwb(0 85% 10% / 0.9);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    text-align: center;
+  }
+  
+  /* Main Title */
+  h2 {
+    font-size: 3rem;
+    color: #301313;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Dashboard Statistics */
+  .dashboard-stats {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 40px;
+    padding: 0 20px;
+  }
+  
+  .stat-item {
+    background-color: #490b0b;
+    color: rgb(177, 173, 173);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 25px;
+    border-radius: 12px;
+    width: 30%;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .stat-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .stat-item h4 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+  }
+  
+  .stat-item p {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  /* Auction History Table */
+  h3 {
+    font-size: 2.5rem;
+    color: #301313;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .auction-history-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .auction-history-table th,
+  .auction-history-table td {
+    padding: 20px 15px;
+    text-align: left;
+    font-size: 1.2rem;
+    color: #555;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .auction-history-table th {
+    background-color: #490b0b;
+    color: rgb(177, 173, 173);
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  .auction-history-table tbody td{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(49, 7, 7);
+  }
+  
+  .auction-history-table td {
+    background-color: #d1a8a8;
+    transition: background-color 0.3s ease;
+  }
+  
+  .auction-history-table tr:hover td {
+    background-color: #f1f1f1;
+  }
+  
+  .status-won {
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  .status-lost {
+    color: #dc3545;
+    font-weight: bold;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .dashboard-stats {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .stat-item {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  
+    .auction-history-table th,
+    .auction-history-table td {
+      padding: 15px 10px;
+      font-size: 1rem;
+    }
+  }
+  
+  /* Hover Effects */
+  .auction-history-table tr:hover td {
+    background-color: #e6cdcd;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Smooth Hover for Table */
+  .auction-history-table th,
+  .auction-history-table td {
+    position: relative;
+  }
+  
+  .auction-history-table th::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #fff;
+    transition: width 0.4s ease;
+  }
+  
+  .auction-history-table th:hover::after {
+    width: 100%;
+  }
+  
